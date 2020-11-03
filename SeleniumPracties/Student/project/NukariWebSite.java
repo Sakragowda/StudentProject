@@ -20,10 +20,10 @@ public class NukariWebSite {
 	     
 	     List<String> wind = new ArrayList<String>(parenthandel);
 //	     for (String windows : parenthandel) {
-//	     driver.switchTo().window(windows);
+//	     driver.switchTo().window(windows);             //close prent to child 
 //	     driver.close();
 //	     }
-	     for (int i = wind.size() - 1 ; i >= 0; i--) {
+	     for (int i = wind.size() - 1 ; i >= 0; i--) {  // close child to parent
 			driver.switchTo().window(wind.get(i));
 			driver.close();
 		}
